@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(63, 42, 148);
+    color: white;
+    align-items: center;
+    height: 65px;
+}
+
+.logo img {
+    width: 40px;
+    padding: 0 8px;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Verela Round', sans-serif;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    background-image: url("newbayanbg.jpg");
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+h1 {
+    display: flex;
+    padding: 15px;
+    font-size: 10px;
+}
+
+.bottom {
+    position: sticky;
+    background-color:rgb(63, 42, 148);
+    
+    height: 90px;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progressbar {
+    width: 80%;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.bayanItem {
+    background-color: white;
+    border-top-style: initial;
+    width: 40%;
+    height: 40px;
+    color: black;
+    border-radius: 16px;
+    display: flex;
+    margin: 28px auto;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 700px;
+}
+
+.bayanItem i {
+    cursor: pointer;
+}
+
+.bayanItem img {
+    width: 25px;
+    border-radius: 8px;
+    margin: 0 25px;
+}
+
+.bayanlistplay {
+    padding: 10px;
+}
+
+.songgif {
+    position: absolute;
+    left: 24vh;
+}
+
+.songgif img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    width: 95px;
+    
+}
+
+#masterclass {
+    margin-left: 15px;
+}
+
+.ms {
+    width: 100px;
+}
+
+/* Media Queries for Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-image: url("newbg2.jpg");
+    }
+    .logo img {
+        width: 40px;
+        margin: 3px;
+    }
+
+    .logo {
+        padding: 0 10px;
+        font-size: 1em;
+    }
+
+    nav ul li {
+        padding: 0 8px;
+    }
+
+    .bayanItem {
+        width: 90%;
+        margin: 26px auto;
+        height: 42px;
+        margin-top: -6px;
+    }
+
+    .bayanItem img {
+        width: 20px;
+        margin: 0 15px;
+    }
+
+    .songgif {
+        left: 10vh;
+        
+    }
+    .songgif img {
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+        width: 67px;
+        /* justify-content: left; */
+        display: flex;
+        margin-left: -49px;
+        margin-top: 46px;
+    }
+    #masterclass {
+        margin-left: -57px;
+        font-size: 8px;
+    }
+}
